@@ -13,18 +13,18 @@ BASE_PARAMS = {
     "N": 1000,
     "width": 40,
     "height": 40,
-    "beta": 0.05,
+    "beta": 0.08,
     "gamma": 0.07,
-    "delta": 0.0007,
+    "delta": 0.001,
     "initial_infected": 5,
     "vaccination_rate": 0.0,
-    "vaccine_effectiveness": 0.85,
+    "vaccine_effectiveness": 0.84,
     "quarantine_duration": 10,
     "quarantine_rate": 0.0,
 }
 
 STEPS = 300
-RUNS = 20
+RUNS = 30
 
 
 def run_simulation(params, steps=STEPS):
@@ -121,7 +121,7 @@ def experiment_3():
     print("Eksperyment 3: tempo kampanii szczepień...")
 
     vaccination_rates = [0.0, 0.001, 0.003, 0.007, 0.015]
-    labels = ["brak", "0.1%/dzień", "0.3%/dzień (Szwecja avg)", "0.7%/dzień", "1.5%/dzień"]
+    labels = ["brak", "0.1%/dzień", "0.3%/dzień", "0.7%/dzień", "1.5%/dzień"]
     colors = ["#e74c3c", "#f39c12", "#f1c40f", "#2ecc71", "#3498db"]
 
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
