@@ -318,13 +318,13 @@ mesa-viz-tornado. Projekt składa się z następujących plików:
 \begin{lstlisting}
 disease_simulation/
 |-- simulation/
-|   |-- agent.py         # logika agenta
-|   |-- model.py         # model i siatka
-|   `-- visualization.py # serwer wizualizacji
+|   |-- agent.py         # agent logic
+|   |-- model.py         # model and grid
+|   `-- visualization.py # visualization server
 |-- experiments/
-|   `-- experiments.py   # eksperymenty batch
-|-- figures/             # wykresy wynikowe
-`-- report/              # raport LaTeX
+|   `-- experiments.py   # batch experiments
+|-- figures/             # output charts
+`-- report/              # LaTeX report
 \end{lstlisting}
 
 Interaktywna wizualizacja umożliwia przeprowadzenie symulacji
@@ -365,7 +365,7 @@ z Tabeli~\ref{tab:parameters}.
   \includegraphics[width=\textwidth]{figures/exp1_beta.png}
   \caption{Wpływ współczynnika zaraźliwości $\beta$ na przebieg epidemii.
   Kolory odpowiadają wartościom $\beta \in \{0.02, 0.05, 0.08, 0.12, 0.20\}$.
-  Zacieniowane obszary reprezentują odchylenie standardowe z 20 uruchomień.}
+  Zacieniowane obszary reprezentują odchylenie standardowe z 30 uruchomień.}
   \label{fig:exp1}
 \end{figure}
 
